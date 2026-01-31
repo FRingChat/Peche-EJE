@@ -1,0 +1,242 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #470B0B; 
+ 	display: flex;
+    justify-content: center;
+   	align-items: center;
+   	height: auto;
+    min-height: 100vh;
+   	margin: 0;
+    flex-direction: row-reverse; /* Inverse l'ordre pour mettre le menu à droite */
+}
+
+form {
+    background: white;
+   	padding: 30px;
+   	border-radius: 12px;
+   	box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Un léger effet d'ombre */
+   	width: 100%;
+   	max-width: 400px;
+   	display: flex;
+   	flex-direction: column;
+   	gap: 15px;
+}
+
+form textarea {
+    height: auto !important;      /* Autorise le changement de taille */
+    min-height: 150px !important; /* Force une hauteur d'environ 6 lignes */
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+h3 {
+  	text-align: center;
+   	color: #333;
+   	margin-bottom: 10px;
+}
+
+input, textarea {
+   	padding: 12px;
+   	border: 1px solid #ddd;
+   	border-radius: 6px;
+   	font-size: 16px;
+   	outline: none;
+   	transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+   	border-color: #C24E4E;
+}
+
+textarea {
+  	resize: vertical;
+    min-height: 120px !important;
+    padding: 12px;
+}
+
+button {
+   	background-color: #9E1F06;
+   	color: white;
+   	padding: 12px;
+  	border: none;
+   	border-radius: 6px;
+   	font-size: 16px;
+   	font-weight: bold;
+   	cursor: pointer;
+   	transition: background 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+   	background-color: #470B0B; /* Devient plus foncé au survol de la souris */
+}
+
+button:disabled {
+   	background-color: #ccc;
+   	cursor: not-allowed;
+}
+
+
+/* Le bandeau latéral */
+.sidebar {
+    width: 250px;
+    height: 100vh; /* Toute la hauteur de l'écran */
+    background-color: #030101;
+    color: white;
+    position: fixed;
+    right: 0; /* Aligné à droite */
+    top: 0;
+    padding: 20px;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+
+/* On dit aux liens de prendre tout l'espace disponible au milieu */
+.nav-links {
+    flex-grow: 1;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.nav-links li {
+    margin-bottom: 15px;
+}
+
+/* Style du conteneur du logo en bas */
+.sidebar-footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444; /* Une petite ligne discrète pour séparer */
+}
+
+.nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.footer-logo {
+    max-width: 120px; /* Ajustez la taille de votre logo ici */
+    height: auto;
+}
+
+.nav-links a:hover {
+    background-color: #444;
+    color: white;
+    padding-left: 20px; /* Petit effet de décalage au survol */
+}
+
+/* La zone de contenu principal */
+.content {
+    margin-right: 250px; /* On laisse la place exacte du menu */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: flex-start;     /* Centre verticalement */
+    padding: 60px 20px;
+    box-sizing: border-box;  /* Pour que le padding ne casse pas la mise en page */
+}
+
+/* Cache le bouton hamburger sur ordinateur */
+.menu-toggle { display: none; }
+
+
+/* Pour les tablettes et smartphones */
+@media screen and (max-width: 768px) {
+    body {
+        display: block !important; /* On casse le flex pour empiler */
+        flex-direction: column !important; /* Force l'ordre : Menu en haut, Contenu en dessous */
+        min-height: 100vh !important;
+        margin: 0;
+    }
+
+    .sidebar {
+        position: static !important; /* Le menu ne flotte plus, il prend sa place en haut */
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 !important;
+        padding: 20px 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .nav-links {
+        display: none !important;
+        flex-direction: column !important; /* Liens alignés horizontalement */
+        justify-content: center !important;
+        gap: 15px !important;
+        margin: 0 !important;
+        padding: 20px 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .content {
+        flex: 1 !important; /* Dit au contenu de prendre TOUTE la place restante sous le menu */
+        display: flex !important;
+        justify-content: center !important; /* Centre horizontalement */
+        align-items: center !important;     /* Centre verticalement */
+        padding: 40px 20px !important;      /* Ajoute de l'air en haut et en bas */
+        margin-right: 0 !important;
+        box-sizing: border-box;
+    }
+
+    form {
+        width: 100% !important;
+        max-width: 350px; /* Empêche le formulaire d'être trop large sur tablette */
+        margin: 0 auto !important; /* Force le centrage horizontal classique */
+    }
+
+    .sidebar-footer {
+        display: none !important; /* On cache le logo sur mobile pour tester */
+    }
+
+    /* Le bouton hamburger */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1001;
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: white;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* La classe "active" sera ajoutée par JavaScript */
+    .nav-links.active {
+        display: flex !important;
+        background-color: #030101;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Ajustez selon la hauteur de votre logo */
+        left: 0;
+        flex-direction: column;
+    }
+}
