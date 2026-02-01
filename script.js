@@ -1,6 +1,6 @@
 // -- Envoi du formulaire --
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwxkhMJszpZgQwdtmAz2k3q4n8gX6DSxp6sDBFD-MRVtCAf4QRAzl5Lepb1lU9FfDsCmw/exec'; 
+const scriptURL = 'https://script.google.com/macros/s/AKfycbz7ck6DXRUA8hIVfp2i89PSCZ5l94e9xpqwQ93WP_1OkNrLPaPaWrd5gnqIJj1MgwjMmA/exec'; 
 const form = document.getElementById('monFormulaire');
 
 form.addEventListener('submit', e => {
@@ -93,3 +93,4 @@ if (updateForm) {
         .catch(error => alert("Erreur de connexion"));
     });
 }
+
