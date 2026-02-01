@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peche EJE</title>
 	<link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -18,9 +19,9 @@
     	<div class="logo">Peche EJE</div>
     	<ul id="nav-list" class="nav-links">
         	<li><a href="index.html">Nouvelle mission</a></li>
-        	<li><a href="apropos.html">Création de document</a></li>
+        	<li><a href="edit-doc.html">Création de document</a></li>
         	<li><a href="contact.html">Nous contacter</a></li>
-			<li><a href="contact.html">Mentions légales</a></li>
+			<li><a href="legal.html">Mentions légales</a></li>
     	</ul>
 		<div class="sidebar-footer">
         	<img src="./logo-eje.png" alt="Logo" class="footer-logo">
@@ -28,119 +29,92 @@
 	</nav>
 
 	<main class="content"></main>
+
     	<form id="monFormulaire">
-			<input type="texte" name="Num_mission" placeholder="Num_mission" required>
-            <input type="texte" name="Nom_mission" placeholder="Nom_mission" required>
-            <input type="texte" name="Nom_CE" placeholder="Nom_CE" required>
-            <input type="texte" name="Nom_CC" placeholder="Nom_CC" required>
-            <input type="texte" name="Nom_BC" placeholder="Nom_BC" required>
-            <input type="texte" name="Nom_ACE" placeholder="Nom_ACE" required>
-            <input type="texte" name="Nom_BCR" placeholder="Nom_BCR" required>
-            <input type="texte" name="Duree_de_garantie" placeholder="Duree_de_garantie" required>
-            <input type="texte" name="Nom_intervenant" placeholder="Nom_intervenant" required>
-            <input type="texte" name="Adresse_intervenant" placeholder="Adresse_intervenant" required>
-            <input type="texte" name="Genre_intervenant" placeholder="Genre_intervenant" required>
-            <input type="texte" name="Nom_entreprise" placeholder="Nom_entreprise" required>
-            <input type="texte" name="Adresse_entreprise" placeholder="Adresse_entreprise" required>
-            <input type="texte" name="Nom_client" placeholder="Nom_client" required>
-            <input type="texte" name="Metier_client" placeholder="Metier_client" required>
-            <input type="texte" name="Jour" placeholder="Jour" required>
-            <input type="date" name="Date_debut_mission" placeholder="Date_debut_mission" required>
-            <input type="date" name="Date_fin_mission" placeholder="Date_fin_mission" required>
-            <input type="texte" name="Nom_etape_1" placeholder="Nom_etape_1">
-            <textarea name="Description_etape_1" placeholder="Description_etape_1" row ="5" ></textarea>
-            <input type="number" name="JEH_etape_1" placeholder="JEH_etape_1">
-            <input type="date" name="Date_fin_etape_1" placeholder="Date_fin_etape_1">
-            <input type="texte" name="Nom_etape_2" placeholder="Nom_etape_2">
-            <textarea name="Description_etape_2" placeholder="Description_etape_2" row ="5" ></textarea>
-            <input type="number" name="JEH_etape_2" placeholder="JEH_etape_2">
-            <input type="date" name="Date_fin_etape_2" placeholder="Date_fin_etape_2">
-            <input type="texte" name="Nom_etape_3" placeholder="Nom_etape_3">
-            <textarea name="Description_etape_3" placeholder="Description_etape_3" row ="5" ></textarea>
-            <input type="number" name="JEH_etape_3" placeholder="JEH_etape_3">
-            <input type="date" name="Date_fin_etape_3" placeholder="Date_fin_etape_3">
-            <input type="texte" name="Nom_etape_4" placeholder="Nom_etape_4">
-            <textarea name="Description_etape_4" placeholder="Description_etape_4" row ="5" ></textarea>
-            <input type="number" name="JEH_etape_4" placeholder="JEH_etape_4">
-            <input type="date" name="Date_fin_etape_4" placeholder="Date_fin_etape_4">
-            <input type="texte" name="Nom_etape_5" placeholder="Nom_etape_5">
-            <textarea name="Description_etape_5" placeholder="Description_etape_5" row ="5" ></textarea>
-            <input type="number" name="JEH_etape_5" placeholder="JEH_etape_5">
-            <input type="date" name="Date_fin_etape_5" placeholder="Date_fin_etape_5">
-            <input type="texte" name="Nom_etape_6" placeholder="Nom_etape_6">
-            <textarea name="Description_etape_6" placeholder="Description_etape_6" row ="5" ></textarea>
-            <input type="number" name="JEH_etape_6" placeholder="JEH_etape_6">
-            <input type="date" name="Date_fin_etape_6" placeholder="Date_fin_etape_6">
-            <input type="texte" name="Nom_etape_7" placeholder="Nom_etape_7">
-            <textarea name="Description_etape_7" placeholder="Description_etape_7" row ="5" ></textarea>
-            <input type="number" name="JEH_etape_7" placeholder="JEH_etape_7">
-            <input type="date" name="Date_fin_etape_7" placeholder="Date_fin_etape_7">
-            <input type="texte" name="Nom_etape_8" placeholder="Nom_etape_8">
-            <textarea name="Description_etape_8" placeholder="Description_etape_8" row ="5" ></textarea>
-            <input type="number" name="JEH_etape_8" placeholder="JEH_etape_8">
-            <input type="date" name="Date_fin_etape_8" placeholder="Date_fin_etape_8">
-            <input type="texte" name="Nom_etape_9" placeholder="Nom_etape_9">
-            <textarea name="Description_etape_9" placeholder="Description_etape_9" row ="5" ></textarea>
-            <input type="number" name="JEH_etape_9" placeholder="JEH_etape_9">
-            <input type="date" name="Date_fin_etape_9" placeholder="Date_fin_etape_9">
-            <input type="texte" name="Nom_etape_10" placeholder="Nom_etape_10">
-            <textarea name="Description_etape_10" placeholder="Description_etape_10" row ="5" ></textarea>
-            <input type="number" name="JEH_etape_10" placeholder="JEH_etape_10">
-            <input type="date" name="Date_fin_etape_10" placeholder="Date_fin_etape_10">
-            <input type="texte" name="Nom_etape_11" placeholder="Nom_etape_11">
-            <textarea name="Description_etape_11" placeholder="Description_etape_11" row ="5" ></textarea>
-            <input type="number" name="JEH_etape_11" placeholder="JEH_etape_11">
-            <input type="date" name="Date_fin_etape_11" placeholder="Date_fin_etape_11">
-            <input type="texte" name="Nom_etape_12" placeholder="Nom_etape_12">
-            <textarea name="Description_etape_12" placeholder="Description_etape_12" row ="5" ></textarea>
-            <input type="number" name="JEH_etape_12" placeholder="JEH_etape_12">
-            <input type="date" name="Date_fin_etape_12" placeholder="Date_fin_etape_12">
-			
-    		<button type="submit" id="submitBtn">Envoyer</button>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+            <div class="form-step active">
+                <h3>Nouvelle Mission</h3>
+    			<input type="texte" name="Num_mission" placeholder="Num_mission" required>
+                <input type="texte" name="Nom_mission" placeholder="Nom_mission" required>
+                <input type="texte" name="Nom_CE" placeholder="Nom_CE" required>
+                <input type="texte" name="Nom_CC" placeholder="Nom_CC" required>
+                <input type="texte" name="Nom_BC" placeholder="Nom_BC" required>
+                <input type="texte" name="Nom_ACE" placeholder="Nom_ACE" required>
+                <input type="texte" name="Nom_BCR" placeholder="Nom_BCR" required>
+                <button type="button" class="btn-next">Suivant</button>
+            </div>
+
+            <div class="form-step">
+                <h3>Informations générales</h3>
+                <input type="texte" name="Duree_de_garantie" placeholder="Duree_de_garantie" required>
+                <input type="texte" name="Nom_intervenant" placeholder="Nom_intervenant" required>
+                <input type="texte" name="Adresse_intervenant" placeholder="Adresse_intervenant" required>
+                <input type="texte" name="Genre_intervenant" placeholder="Genre_intervenant" required>
+                <input type="texte" name="Nom_entreprise" placeholder="Nom_entreprise" required>
+                <input type="texte" name="Adresse_entreprise" placeholder="Adresse_entreprise" required>
+                <input type="texte" name="Nom_client" placeholder="Nom_client" required>
+                <input type="texte" name="Metier_client" placeholder="Metier_client" required>
+                <div class="btn-group">
+                    <button type="button" class="btn-prev">Précédent</button>
+                    <button type="button" class="btn-next">Suivant</button>
+                </div>
+            </div>
+            
+            <div class="form-step">
+                <h3>Dates importantes</h3>
+                <input type="texte" name="Jour" placeholder="Jour" required>
+                
+                <label for="Date_debut_mission">Date_debut_mission</label>
+                <input type="date" name="Date_debut_mission" placeholder="Date_debut_mission" required>
+                
+                <input type="date" name="Date_fin_mission" placeholder="Date_fin_mission" required>
+                <div class="btn-group">
+                    <button type="button" class="btn-prev">Précédent</button>
+                    <button type="button" class="btn-next">Suivant</button>
+                </div>
+            </div>
+
+            <div class="form-step">
+                <h3>Etape 1</h3>
+                <input type="texte" name="Nom_etape_1" placeholder="Nom_etape_1">
+                <textarea name="Description_etape_1" placeholder="Description_etape_1" row ="5" ></textarea>
+                <input type="number" name="JEH_etape_1" placeholder="JEH_etape_1">
+                <input type="date" name="Date_fin_etape_1" placeholder="Date_fin_etape_1">
+                <div class="btn-group">
+                    <button type="button" class="btn-prev">Précédent</button>
+                    <button type="button" class="btn-next">Suivant</button>
+                </div>
+            </div>
+            
+            <div class="form-step">
+                <h3>Etape 2</h3>
+                <input type="texte" name="Nom_etape_2" placeholder="Nom_etape_2">
+                <textarea name="Description_etape_2" placeholder="Description_etape_2" row ="5" ></textarea>
+                <input type="number" name="JEH_etape_2" placeholder="JEH_etape_2">
+                <input type="date" name="Date_fin_etape_2" placeholder="Date_fin_etape_2">
+                <div class="btn-group">
+                    <button type="button" class="btn-prev">Précédent</button>
+                    <button type="button" class="btn-next">Suivant</button>
+                </div>
+            </div>
+
+            <div class="form-step">
+                <h3>Etape 2</h3>
+                <input type="texte" name="Nom_etape_3" placeholder="Nom_etape_3">
+                <textarea name="Description_etape_3" placeholder="Description_etape_3" row ="5" ></textarea>
+                <input type="number" name="JEH_etape_3" placeholder="JEH_etape_3">
+                <input type="date" name="Date_fin_etape_3" placeholder="Date_fin_etape_3">
+                <div class="btn-group">
+                    <button type="button" class="btn-prev">Précédent</button>
+                    <button type="submit">Envoyer</button>
+                </div>
+            </div>
+
 		</form> 
 	</main>
 
-
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwxkhMJszpZgQwdtmAz2k3q4n8gX6DSxp6sDBFD-MRVtCAf4QRAzl5Lepb1lU9FfDsCmw/exec'; 
-        const form = document.getElementById('monFormulaire');
-
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-            const btn = document.getElementById('submitBtn');
-            btn.disabled = true;
-            btn.innerText = "Envoi en cours...";
-
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    alert("Succès ! Les données sont envoyées !");
-                    form.reset();
-                    btn.disabled = false;
-                    btn.innerText = "Envoyé au tableau";
-                })
-                .catch(error => {
-                    console.error('Erreur !', error.message);
-                    alert("Une erreur est survenue.");
-                    btn.disabled = false;
-                });
-        });
-    </script>
-    
-    <script>
-        // On sélectionne le bouton et la liste
-        const toggleBtn = document.getElementById('mobile-menu');
-        const navList = document.getElementById('nav-list');
-
-        // On vérifie si les éléments existent avant d'ajouter l'événement
-        if(toggleBtn && navList) {
-            toggleBtn.onclick = function() {
-                // On ajoute ou on retire la classe "active"
-                navList.classList.toggle('active');
-                console.log("Menu cliqué !"); // Pour vérifier dans la console
-            };
-        }
-    </script>
-
 </body>
-
 </html>
