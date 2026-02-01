@@ -37,26 +37,21 @@
 
             <div class="form-step active">
                 <h3>Nouvelle Mission</h3>
-    			<input type="texte" name="Num_mission" placeholder="Num_mission" required>
-                <input type="texte" name="Nom_mission" placeholder="Nom_mission" required>
-                <input type="texte" name="Nom_CE" placeholder="Nom_CE" required>
-                <input type="texte" name="Nom_CC" placeholder="Nom_CC" required>
-                <input type="texte" name="Nom_BC" placeholder="Nom_BC" required>
-                <input type="texte" name="Nom_ACE" placeholder="Nom_ACE" required>
-                <input type="texte" name="Nom_BCR" placeholder="Nom_BCR" required>
+    			<input type="texte"name="Num_mission" placeholder="Num_mission" required>
+                <input type="texte"name="Nom_mission" placeholder="Nom_mission" required>
+                <input type="texte"name="Duree_de_garantie" placeholder="Duree_de_garantie" required>
                 <button type="button" class="btn-next">Suivant</button>
             </div>
 
             <div class="form-step">
                 <h3>Informations générales</h3>
-                <input type="texte" name="Duree_de_garantie" placeholder="Duree_de_garantie" required>
-                <input type="texte" name="Nom_intervenant" placeholder="Nom_intervenant" required>
-                <input type="texte" name="Adresse_intervenant" placeholder="Adresse_intervenant" required>
-                <input type="texte" name="Genre_intervenant" placeholder="Genre_intervenant" required>
-                <input type="texte" name="Nom_entreprise" placeholder="Nom_entreprise" required>
-                <input type="texte" name="Adresse_entreprise" placeholder="Adresse_entreprise" required>
-                <input type="texte" name="Nom_client" placeholder="Nom_client" required>
-                <input type="texte" name="Metier_client" placeholder="Metier_client" required>
+                <input type="texte"name="Nom_intervenant" placeholder="Nom_intervenant" required>
+                <input type="texte"name="Adresse_intervenant" placeholder="Adresse_intervenant" required>
+                <input type="texte"name="Genre_intervenant" placeholder="Genre_intervenant" required>
+                <input type="texte"name="Nom_entreprise" placeholder="Nom_entreprise" required>
+                <input type="texte"name="Adresse_entreprise" placeholder="Adresse_entreprise" required>
+                <input type="texte"name="Nom_client" placeholder="Nom_client" required>
+                <input type="texte"name="Metier_client" placeholder="Metier_client" required>
                 <div class="btn-group">
                     <button type="button" class="btn-prev">Précédent</button>
                     <button type="button" class="btn-next">Suivant</button>
@@ -65,14 +60,16 @@
             
             <div class="form-step">
                 <h3>Dates importantes</h3>
-                <input type="texte" name="Jour" placeholder="Jour" required>
-                
+                <input type="texte"name="Jour" placeholder="Jour" required>
+
                 <label for="Date_debut_mission">Date_debut_mission</label>
-                <input type="date" name="Date_debut_mission" placeholder="Date_debut_mission" required>
-                
-                <input type="date" name="Date_fin_mission" placeholder="Date_fin_mission" required>
+                <input type="date" id="Date_debut_mission"name="Date_debut_mission" placeholder="Date_debut_mission" required>
+
+                <label for="Date_fin_mission">Date_fin_mission</label>
+                <input type="date" id="Date_fin_mission"name="Date_fin_mission" placeholder="Date_fin_mission" required>
                 <div class="btn-group">
                     <button type="button" class="btn-prev">Précédent</button>
+                    <button type="submit">Envoyer</button>
                     <button type="button" class="btn-next">Suivant</button>
                 </div>
             </div>
