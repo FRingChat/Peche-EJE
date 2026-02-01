@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peche EJE</title>
+	<link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+	<nav class="sidebar">
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+    	<div class="logo">Peche EJE</div>
+    	<ul id="nav-list" class="nav-links">
+        	<li><a href="index.html">Nouvelle mission</a></li>
+        	<li><a href="edit-doc.html">Création de document</a></li>
+        	<li><a href="contact.html">Nous contacter</a></li>
+			<li><a href="legal.html">Mentions légales</a></li>
+    	</ul>
+		<div class="sidebar-footer">
+        	<img src="./logo-eje.png" alt="Logo" class="footer-logo">
+    	</div>
+	</nav>
+
+	<main class="content"></main>
+		
+	    <form id="updateForm">
+	    	<h3>Création de document</h3>
+    
+    		<label for="searchNom">Numéro de la mission</label>
+		    <input type="text" id="searchNom" name="Num_mission" placeholder="Ex : 3072" required>
+
+	    	<label for="colonneChoisie">Type de document</label>
+	    	<select name="Colonne" id="colonneChoisie">
+    		    <option value="3">CE</option>
+    	    	<option value="4">CC</option>
+	    	    <option value="5">BC</option>
+        		<option value="6">ACE</option>
+				<option value="7">BCR</option>
+	    	</select>
+
+    		<label for="newData">Nom du document</label>
+	    	<input type="text" name="NouvelleDonnee" placeholder="Ex : 3072-CC-1" required>
+
+    		<button type="submit" id="submitBtn">Créer</button>
+		</form>
+	
+
+</body>
+</html>
