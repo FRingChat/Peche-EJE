@@ -1,5 +1,5 @@
 // --- CONFIGURATION ---
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyp59x1tS0ZBDtV3rk2d2Q0lYJOUvhsQ3_F4PQTuBqhqwCfC9mDG-5EBDZ9IkKQ5M5hsA/exec'
+const scriptURL = 'URL Apps Script'
 
 // --- GESTION DU MENU HAMBURGER (Commun aux deux pages) ---
 const menu = document.querySelector('#mobile-menu');
@@ -66,3 +66,4 @@ document.addEventListener('submit', e => {
           btn.innerText = originalBtnText;
       });
 });
+
